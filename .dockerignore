@@ -1,0 +1,12 @@
+node_modules
+npm-debug.log
+.git
+.github
+terraform
+test
+scripts
+docs
+*.md
+.env
+Dockerfile
+docker-compose.yml

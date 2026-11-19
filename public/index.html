@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yuma Skincare | Simple, effective skincare</title>
+  <meta name="description" content="Yuma Skincare: serums, moisturisers, sunscreen and more, delivered in Lagos.">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">Yuma <span>Skincare</span></a>
+    <button id="cart-button" class="cart-button" type="button" aria-label="Open cart">
+      Cart <span id="cart-count" class="badge">0</span>
+    </button>
+  </header>
+
+  <section class="hero">
+    <h1>Skincare that keeps it simple.</h1>
+    <p>Eight carefully chosen products for glowing, healthy skin.</p>
+    <a class="button" href="#products">Shop now</a>
+  </section>
+
+  <main id="products" class="products" aria-live="polite">
+    <p id="loading">Loading products…</p>
+  </main>
+
+  <aside id="cart" class="cart" aria-label="Shopping cart" hidden>
+    <div class="cart-head">
+      <h2>Your cart</h2>
+      <button id="cart-close" type="button" aria-label="Close cart">&times;</button>
+    </div>
+    <ul id="cart-items" class="cart-items"></ul>
+    <p class="cart-total">Total: <strong id="cart-total">₦0</strong></p>
+
+    <form id="checkout" novalidate>
+      <label>Full name <input name="name" autocomplete="name" required></label>
+      <label>Email <input name="email" type="email" autocomplete="email" required></label>
+      <label>Delivery address <textarea name="address" rows="2" autocomplete="street-address" required></textarea></label>
+      <button class="button" type="submit">Place order</button>
+      <p id="message" class="message" role="status"></p>
+    </form>
+  </aside>
+
+  <footer class="site-footer">
+    <p>Yuma Skincare is a demo shop built to show Docker, CI/CD and AWS deployment. No real payments are taken.</p>
+    <p id="version"></p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

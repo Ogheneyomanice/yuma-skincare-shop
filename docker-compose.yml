@@ -1,0 +1,8 @@
+services:
+  shop:
+    build: .
+    image: yuma-skincare-shop:local
+    ports:
+      - "3000:3000"
+    environment:
+      APP_VERSION: local
