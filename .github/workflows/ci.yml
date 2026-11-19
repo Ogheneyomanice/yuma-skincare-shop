@@ -83,7 +83,7 @@ jobs:
         run: docker run -d --name shop -p 3000:3000 yuma-skincare-shop:ci
 
       - name: Smoke test with the health-check script
-        run: ./scripts/check_health.sh http://localhost:3000 15 2
+       run: bash scripts/check_health.sh http://localhost:3000 15 2
 
       - name: Show container logs if the smoke test failed
         if: failure()
