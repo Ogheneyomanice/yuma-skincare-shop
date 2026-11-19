@@ -87,4 +87,4 @@ jobs:
           wait-for-minutes: 10
 
       - name: Post-deploy health check
-    run: bash scripts/check_health.sh http://localhost:3000 15 2
+        run: bash scripts/check_health.sh "${{ vars.APP_URL }}" 30 10
