@@ -1,3 +1,4 @@
+![CI](https://github.com/Ogheneyomanice/yuma-skincare-shop/actions/workflows/ci.yml/badge.svg)
 # Yuma Skincare e-commerce shop
 
 A small online skincare shop (Node.js + Express) built to show a complete DevOps workflow:
